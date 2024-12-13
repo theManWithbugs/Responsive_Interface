@@ -1,3 +1,10 @@
+function showPage(pageId) {
+    document.querySelectorAll('.page').forEach(page => {
+        page.classList.add('hidden');
+    });
+    document.getElementById(pageId).classList.remove('hidden');
+}
+
 function armazenar_valor() {
     let valor = document.getElementById('password').value;
 
@@ -31,6 +38,8 @@ function check_password(password, password_confirm) {
         console.log('Ambas as senhas devem ser iguais!');
     }
 }
+
+
 
 
 

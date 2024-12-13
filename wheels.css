@@ -1,19 +1,90 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+.hidden { display: none; }
+
+.options {
+    width: 100%;
 }
+
+#login {
+    margin-left: 20%;
+}
+
+#cadastrar {
+    margin-left: 19%;
+}
+
+#password_confirm {
+    width: 162px;
+}
+
+.button {
+    display: inline-block;
+    padding: 12px 28px;
+    margin: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+    background-image: linear-gradient(to bottom right, #000000, #00000025);
+    border: none;
+    border-radius: 40px;
+    box-shadow: 0px 4px 0px #000000;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+  }
+  
+  .button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0px 6px 0px #00000037;
+  }
+  
+  .button:active {
+    transform: translateY(0px);
+    box-shadow: none;
+    background-image: linear-gradient(to bottom right, #000000, #00000018);
+  }
+  
+  .button:before,
+  .button:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+  }
+  
+  .button:before {
+    top: -3px;
+    left: -3px;
+    border-radius: 40px;
+    border-top: 3px solid #fff;
+    border-left: 3px solid #fff;
+  }
+  
+  .button:after {
+    bottom: -3px;
+    right: -3px;
+    border-radius: 40px;
+    border-bottom: 3px solid #fff;
+    border-right: 3px solid #fff;
+  }
+  
 
 body {
     width: 100%;
     min-height: 100vh;
-    background-size: cover;
+    height: 100vh;
+    width: 100%;
     background-image: url("mountain.jpg");
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+#img_box {
+    width: 250px;
+    height: 250px;
 }
 
 #box_container {
@@ -24,24 +95,6 @@ body {
     border: 2px solid white;
     backdrop-filter: blur(10px);
     margin-top: -200px;
-}
-
-#img_box {
-    width: 250px;
-    height: 250px;
-}
-
-#int_box {
-    margin-left: 19%;
-}
-
-.btn-primary {
-    margin-left: 20%; 
-    width: 100px;
-}
-
-#password_confirm {
-    width: 47%;
 }
 
 .input {
@@ -75,8 +128,8 @@ body {
 }
 
 .btn {
-    width: 110px;
-    height: 40px;
+    width: 115px;
+    height: 45px;
     border-radius: 50px;
     background-image: linear-gradient(135deg, #000000 0%, #0200022d 100%);
     box-shadow: 0 20px 30px -6px rgba(255, 255, 255, 0.5);
@@ -99,12 +152,28 @@ body {
     opacity: 0.5;
 }
 
-@media screen and (max-width: 918px) {
+@media screen and (max-width: 932px) {
     #int_box {
         margin-left: 12%;
     }
 
     #password_confirm {
         width: 52%;
+    }
+}
+
+@media screen and (max-width: 844px) {
+    #cadastrar {
+        margin-left: 10%;
+    }
+
+    #login {
+        margin-left: 10%;
+    }
+}
+
+@media screen and (max-width: 1180px) {
+    #password_confirm {
+        width: 161px;
     }
 }

@@ -20,7 +20,7 @@ img {
 
 nav {
     background-color: transparent;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(15px);
 }
 
 @media screen and (max-width: 918px) {
