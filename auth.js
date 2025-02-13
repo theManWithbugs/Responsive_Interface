@@ -39,6 +39,36 @@ function check_password(password, password_confirm) {
     }
 }
 
+// This function could be used later to get the data from some table in the page
+
+// function getTableData() {
+//     // Select the element "table" where class is equal to "w-100"
+//     // Query selector allows to select css in the page
+//     var table = document.querySelector('table.w-100');
+//     // Get all elements in the body, how this works i don't know yet
+//     var rows = table.getElementsByTagName('tbody')[0].getElementsByTagName('tr');
+//     // Create an empty array to store the date
+//     var tableData = [];
+
+//     // this loop will get all the data from the table and store in the array
+//     for (var i = 0; i < rows.length; i++) {
+//         var cells = rows[i].getElementsByTagName('td'); //Get all cells in the current row
+//         var rowData = {
+//             tecnico_responsavel: cells[0].innerText, //Get the first cell in the current row
+//             evolucao_percepcoes: cells[1].innerText, //Get the second cell in the current row
+//             medida: cells[2].innerText, //Get the third cell in the current row
+//             tipo_penal: cells[3].innerText, //Get the fourth cell in the current row
+//             data_registro: cells[4].innerText, //Get the fifth cell in the current row
+//         };
+//         tableData.push(rowData);
+//     }
+//     return tableData; //Return all table data in an array
+// }
+
+// // Showing the data in the console
+// var data = getTableData();
+// console.log(data);
+
 
 
 
