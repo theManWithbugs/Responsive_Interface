@@ -14,7 +14,6 @@ body {
     padding: 10px;
     margin-left: 11%;
     margin-top: 5%;
-    border: solid 1px black;
     border-radius: 5px;
 }
 
@@ -203,6 +202,30 @@ input {
     overflow: hidden;
     z-index: 7;
     background-color: #191c29;
+  }
+
+  @media (max-width: 768px) {
+    #input_box {
+      width: 420px;
+    }
+  }
+
+  @media (max-width: 608px) {
+    #input_box {
+      width: 370px;
+    }
+  }
+
+  @media (max-width: 592px) {
+    #input_box {
+      width: 335px;
+    }
+  }
+
+  @media (max-width: 535px) {
+    #input_box {
+      width: 310px;
+    }
   }
   
 
