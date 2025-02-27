@@ -1,6 +1,6 @@
 .sidebar {
     width: 16%;
-    height: 100%;
+    height: 100vh;
     background: linear-gradient(to top, red, orange, yellow);
     backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(15px); 
@@ -12,6 +12,9 @@
     overflow-y: scroll;
     overflow: hidden;
     height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .left-column {
@@ -31,16 +34,6 @@
 
 #btn_menu {
     margin-left: 10%;
-}
-
-h4 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    /* x is the first and y the second number */
-    /* x is the right and left */
-    /* y is the top and bottom */
-    transform: translate(-50%, -50%);
 }
 
 @media (max-width: 1180px) {
