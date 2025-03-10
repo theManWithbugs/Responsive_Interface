@@ -1,35 +1,23 @@
+
 .sidebar {
-    width: 16%;
     height: 100vh;
-    background: linear-gradient(to top, red, orange, yellow);
+    background-color: #bebcbcaa;
     backdrop-filter: blur(15px);
-    -webkit-backdrop-filter: blur(15px); 
-    box-shadow: 0 4px 6px rgba(209, 24, 24, 0.1); 
-    display: none;
+    -webkit-backdrop-filter: blur(15px);
+    box-shadow: 0 4px 6px rgba(209, 24, 24, 0.1);
 }
 
 .content {
     overflow-y: scroll;
     overflow: hidden;
-    height: 100%;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.left-column {
-    height: 100vh; /* 100% da altura da viewport */
-}
-
 .btn_primary {
     height: 60px;
-}
-
-#btn_hidden {
-    width: 40px;
-    position: absolute;
-    top: 50%;
-    transform: translate(-50%, -50%);
 }
 
 #btn_menu {

@@ -18,8 +18,8 @@ function hidenNavBar() {
 
 function showNavBar() {
     element.style.display = "block";
-    content.style.marginLeft = "10%"
-    content.style.marginTop= "-550px";
+    // content.style.marginLeft = "10%"
+    // content.style.marginTop= "-550px";
     // content.style.width = "84%";
 
     element.classList.remove('animate__animated', 'animate__fadeOutLeft');
